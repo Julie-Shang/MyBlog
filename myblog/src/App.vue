@@ -1,5 +1,21 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+  </div>
 </template>
 
-<style></style>
+<script>
+import Request from "@/api/request.js";
+
+export default {
+  name: "App"
+};
+</script>
+
+<style>
+@import "assets/css/base.css";
+
+@import "assets/css/normalize.css";
+</style>
